@@ -13,8 +13,17 @@ public class Mirror {
     }
 
     public static void topHalf() {
-        System.out.println("topHalf");
+        for (int line = 1; line <= 4; line++) {
+            System.out.print("|");
+            for (int j = 1; j <= -2 * line + 8; j++) {
+                System.out.print(" ");
+            }
+            System.out.println("|");
+        }
     }
 
-    public static void bottomHalf() { System.out.println("bottomHalf"); }
+
+    public static void bottomHalf() {
+        System.out.println("bottomHalf");
+    }
 }
